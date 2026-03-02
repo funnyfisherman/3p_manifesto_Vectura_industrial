@@ -56,8 +56,8 @@ Le modèle 3P ne cherche pas à détruire le MVV, mais à agir comme son **API d
 
 Surtout, cette interface fonctionne en mode **duplex (bidirectionnel)** :
 
-1. **Top-Down :** La Mission de l'entreprise dicte les axiomes d'ingénierie de la Philosophie.
-2. **Bottom-Up :** Si les contraintes physiques rencontrées lors de l'exécution (la Procédure) démontrent que la Mission est irréaliste ou dangereuse, le signal remonte instantanément la chaîne. Ce flux "duplex" force le MVV à s'adapter à la réalité du terrain, l'empêchant de se transformer en propagande corporative vide de sens.
+1. **Top-Down :** La Mission, Vision et Valeurs (MVV) de l'entreprise dictent les axiomes d'ingénierie de la Philosophie.
+2. **Bottom-Up :** Si les contraintes physiques rencontrées lors de l'exécution (la Procédure) démontrent que le MVV est irréaliste ou dangereux, le signal remonte instantanément la chaîne. Ce flux "duplex" force le MVV à s'adapter à la réalité du terrain, l'empêchant de se transformer en propagande corporative vide de sens.
 
 ---
 
@@ -77,13 +77,15 @@ Le cœur du système réside dans sa boucle de rétroaction. L'exécution (Botto
 
 ```mermaid
 flowchart TD
-    subgraph "Modèle 3P - Vectura Industrial"
+    subgraph "Modèle 3P - Interface Duplex"
     direction TB
-    P1["1. PHILOSOPHIE<br/><i>L'Intention (Axiomes)</i>"] -->|"Dicte les règles"| P2["2. POLITIQUE<br/><i>Le Cadre (Contraintes)</i>"]
+    MVV["MVV<br/><i>Mission, Vision, Valeurs</i>"] <-->|"API Full Duplex"| P1["1. PHILOSOPHIE<br/><i>L'Intention (Axiomes)</i>"]
+    P1 -->|"Dicte les règles"| P2["2. POLITIQUE<br/><i>Le Cadre (Contraintes)</i>"]
     P2 -->|"Génère les actions"| P3["3. PROCÉDURE<br/><i>L'Exécution (Terrain)</i>"]
     P3 -.->|"BOUCLE DE RÉTROACTION<br/>Si la procédure échoue, le terrain informe et adapte l'intention"| P1
     end
     
+    style MVV fill:#7c3aed,stroke:#5b21b6,stroke-width:2px,color:#fff
     style P1 fill:#2563eb,stroke:#1e40af,stroke-width:2px,color:#fff
     style P2 fill:#0891b2,stroke:#0e7490,stroke-width:2px,color:#fff
     style P3 fill:#059669,stroke:#047857,stroke-width:2px,color:#fff
@@ -93,18 +95,23 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    subgraph "Modèle 2P (Linéaire)"
+    subgraph "Modèle 2P (Linéaire) - MVV Déconnecté"
     direction LR
+    MVV2P["MVV<br/><i>Mission/Vision/Valeurs</i>"]
     A[Politique] --> B[Procédure]
+    MVV2P -.->|"Facultatif<br/>Unidirectionnel"| A
+    style MVV2P fill:#9ca3af,stroke:#6b7280,stroke-dasharray: 5 5,color:#fff
     style A fill:#6b7280,stroke:#374151,color:#fff
     style B fill:#6b7280,stroke:#374151,color:#fff
     end
 
-    subgraph "Modèle 3P (Dynamique)"
+    subgraph "Modèle 3P (Dynamique) - MVV Intégré"
     direction TB
-    C[Philosophie] --> D[Politique]
+    MVV3P["MVV<br/><i>Mission/Vision/Valeurs</i>"] <-->|"API Full Duplex"| C[Philosophie]
+    C --> D[Politique]
     D --> E[Procédure]
     E -.->|Feedback| C
+    style MVV3P fill:#7c3aed,stroke:#5b21b6,stroke-width:2px,color:#fff
     style C fill:#2563eb,stroke:#1e40af,color:#fff
     style D fill:#0891b2,stroke:#0e7490,color:#fff
     style E fill:#059669,stroke:#047857,color:#fff
