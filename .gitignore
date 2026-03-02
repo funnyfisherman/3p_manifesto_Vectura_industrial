@@ -1,0 +1,14 @@
+# Fichiers de travail internes
+brief.md
+*.draft.md
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
