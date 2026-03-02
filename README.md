@@ -174,9 +174,32 @@ En forçant la fusion des niveaux 3, 4 et 5 dans un cycle d'apprentissage contin
 
 ---
 
+## 8. État de l'Art et Démocratisation Systémique (Le "Pourquoi")
+
+Un inventaire honnête des connaissances démontre que les éléments du Modèle 3P existent déjà, mais qu'ils sont isolés dans des silos disciplinaires étanches :
+
+*   **En Informatique et Ingénierie :** Des cadres normatifs comme ITIL ou ISO 9001 structurent l'architecture des services, tandis que la Conception Axiomatique (*Axiomatic Design*) formalise mathématiquement la logique des systèmes.
+*   **Dans le monde Militaire :** Le concept de l'Intention du Commandant (*Commander's Intent*) établit que la Philosophie de la mission doit guider l'opérateur lorsque la Procédure échoue sur le terrain.
+*   **En Administration des Affaires :** L'enseignement académique classique sépare l'aspect relationnel ("Mission, Vision, Valeurs") de l'aspect opérationnel ("Politiques et Procédures"), créant un vide entre l'intention et l'exécution.
+
+Le savoir existe, mais il n'avait jamais été formalisé sous la forme de ce triptyque simple, intégré et cyclique.
+
+### La véritable raison de cette publication
+
+Pourquoi publier ce modèle ? La raison est **la traduction et la distribution de masse**.
+
+Les concepts de résilience systémique mentionnés plus haut sont redoutables, mais ils sont réservés à une élite d'ingénieurs certifiés ou de stratèges militaires. Ils sont accessibles, moyennant un effort, pour les milliers d'étudiants, de gestionnaires et d'entrepreneurs qui sortent des programmes d'administration classiques, mais ne sont malheureusement pas intégrés dans les modèles standards et dans les guides de plans d'affaires.
+
+La philosophie derrière cette publication est de prendre des concepts complexes de haut niveau, d'en extraire l'essence, et de les injecter dans les notions de base compréhensibles et utilisables par n'importe qui. Nous publions le Modèle 3P pour que la rigueur de l'ingénierie et l'agilité tactique puissent enfin être enseignées, comprises et appliquées par la communauté administrative générale, en espérant qu'il fera un jour partie des modèles enseignés.
+
+---
+
 ## Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+---
+En ingénierie logicielle, un "commit" est une contribution qui vient corriger, améliorer ou mettre à jour le code source d'un projet commun. Considérez ce dépôt (repository) comme mon *commit* personnel à la science de la gestion et de l'administration. C'est ma façon de documenter et de partager une amélioration potentielle dans le grand corpus d'une communauté encore plus vaste. J'espère que cette contribution aidera d'autres bâtisseurs à solidifier leurs propres systèmes. -note de l'auteur
 
 ---
 
